@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Social Media Icons -->
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <title>No Rest For The Preachers Tour 2023</title>
+</head>
+
+<body>
+    <div class="mainTourDiv">
+        <header>
+            <h1 id="tourTitle">No Rest For The Preachers Tour 2023</h1>
+        
+            <nav class="navigation">
+                <a class="home" href="#">HOME</a>
+                <a class="news" href="#">NEWS</a>
+                <a class="tour" href="#">TOUR</a>
+                <a class="discography" href="#">DISCOGRAPHY</a>
+                <a class="store" href="#">STORE</a>
+            </nav>
+
+        </header>
+        
+        <!-- this block is about the image -->
+        <div class="topImageDiv">
+            <span class="reference-box">Nair, R., Vishnu, 2018. <i>People at Concert</i> [photograph]. 
+                Available from: https://www.pexels.com/@vishnurnair/ [Accessed 03 Feb 2023].
+            </span>
+            <img src="static/images/pexels-vishnu-r-nair-1105666.jpg" alt="band_image">
+            
+        </div>
+        <!-- image block ends here -->
+
+      
+        <!-- this block holds the events -->
+        <div class="tour-list">
+
+            <div class="event-header">
+                <span><h1>THE DATES</h1></span>
+            </div>
+
+          <!-- Filter by Venue feature block -->
+          <div class="search">
+            <input type="text" id="myInput" placeholder="Search for venues.." title="Type in a venue">
+            </div>
+          <!-- Filter by Venue feature block ends here -->
+          
+            <div class="events-plus-cart-container">
+                <ul class="events">
+                  <!-- events code will be rendered here. The html part is pasted in JS and generated automatically -->
+                </ul>      
+            </div>
+        </div>
+        <!-- rendered events block ends here -->
+
+        <!-- Front end delete functionality -->
+        <h2>Delete Last Event Card</h2>
+        <div id="delete-event-card-div">
+            <div id="delete-wrapper">
+            <button type="button" class="functional-button" id="delete-event">Delete</button>
+        </div>
+        </div>
+        <!-- Front end delete functionality ends here -->
+        
+        <!-- this block is about the Events Form -->
+        <h2>Events Form</h2>
+        <div id="form-wrapper">            
+            <form id="events-form">
+
+            <div class="input-wrapper">
+                <label for="event-id">Event id:</label>
+                <input id="event-id" type="text" placeholder="Integer">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="location">Location:</label>
+                <input id="location" type="text">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="venue">Venue:</label>
+                <input id="venue" type="text">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="price">Price:</label>
+                <input id="price" type="text" placeholder="Integer">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="available">Available:</label>
+                <input id="available" type="text" placeholder="Integer">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="date">Date:</label>
+                <input id="date" type="text" placeholder="YYYY-MM-DD">
+            </div>
+
+            <div class="submit-wrapper">
+                <button type="button" id="submit">Submit</button>
+            </div>
+
+            </form>
+          </div>
+          <!-- Events Form block ends here -->
+
+        <!-- this block is about the footer -->
+        <footer class="footer">
+
+            <nav class="socialMediaIcons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-spotify"></a>
+                <a href="#" class="fa fa-soundcloud"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </nav>
+
+            <nav class="footerNavBar">
+            <a id="copyright" href="#">COPYRIGHT</a>
+            <a id="terms" href="#">TERMS & CONDITIONS</a>
+            <a id="workWithUs" href="#">WORK WITH US</a>
+            </nav>
+
+        </footer>
+      <!-- footer block ends here -->
+      
+    </div>
+    <!-- Main div ends here -->
+  
+    <script src="static/script/script.js"></script>
+</body>
+</html>

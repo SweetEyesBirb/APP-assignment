@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background-color: black;
+}
+
+header {
+  top: 0px;
+  /* need to define 2 margins for the header */
+  left: 0px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.777);
+}
+
+#tourTitle {
+  background: linear-gradient(to bottom, rgb(222, 222, 10), rgba(176, 176, 9, 0.1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* this line only prevents vs code from showing an error */
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 300%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding: 3px;
+}
+
+/* Top Nav Bar. This nav is inside the header */
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0px 15px 0px;
+}
+
+.navigation a {
+  color: darkgray;
+  border: 2px solid darkgray;
+  padding: 5px;
+}
+
+.navigation a:hover {
+  background-image: linear-gradient(to bottom right, rgb(176, 176, 9), rgba(176, 176, 9, 0.1));
+  color: black;
+}
+
+/* Top Nav Bar ends here */
+
+
+/* image div */
+
+.topImageDiv {
+  background-color: #00000000;
+  height: auto;
+  padding-top: 3px;
+}
+
+.topImageDiv img {
+  width: 100%;
+}
+
+/* image reference */
+
+.reference-box {
+  color: rgba(240, 248, 255, 0.3);
+  position: absolute;
+  font-size: x-small;
+  padding-left: 20px;
+}
+
+/* image div ends here */
+
+
+/* event header */
+
+.event-header {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* event header ends here */
+
+
+/* search bar */
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#myInput {
+  width: 60%;
+  height: 30px;
+  border-radius: 7px;
+  border: 0;
+  padding: 3px;
+}
+
+/* search bar ends here */
+
+
+/* Event Cards */
+
+ul {
+  position: relative;
+  width: 70%;
+  align-self: center;
+  list-style-type: none;
+  /* removes bullet points */
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 0;
+  /* removes default margin from the ul */
+  padding: 0;
+  /* removes the default padding from the ul */
+}
+
+.tour-list {
+  display: flex;
+  justify-content: center;
+  /* centers the events */
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.event-card {
+  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.venue-card {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgb(222, 222, 9);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.venue-card span {
+  display: flex;
+  justify-content: center;
+  /* centers the event's text */
+  padding: 5px;
+}
+
+.dates {
+  background: aliceblue;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* bottom part of every event */
+
+.ticket-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.add-to-basket-div {
+  background-image: linear-gradient(to bottom, rgb(222, 222, 9), rgba(176, 176, 9, 0.1));
+  color: black;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Event Cards ends here */
+
+
+
+/* main div of website contains everything from below the image to the footer */
+.events-plus-cart-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 3px;
+  gap: 2em;
+  align-items: center;
+}
+
+/* main div ends here */
+
+
+/* Delete Events */
+
+#delete-wrapper {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#delete-event {
+  margin-left: 0;
+}
+
+/* Delete Events ends here, some is also in the next block */
+
+
+/* Events Form */
+
+h2 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#form-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+form {
+  width: 80%;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border-radius: 7px;
+  border: 0;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+label {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#submit,
+.functional-button {
+  background-image: linear-gradient(to bottom, rgb(222, 222, 9), rgba(176, 176, 9, 0.1));
+  color: black;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+  height: 50px;
+  font-size: large;
+  font-weight: 600;
+  border: 0;
+}
+
+#submit:hover,
+.functional-button:hover {
+  background-image: linear-gradient(to bottom, rgb(222, 222, 9), rgb(222, 222, 9));
+  background-color: black;
+}
+
+#submit:active,
+.functional-button:active {
+  background-image: linear-gradient(to bottom, rgba(176, 176, 9, 0.1), rgb(222, 222, 9));
+  background-color: black;
+}
+
+/* Events Form ends here */
+
+
+/* footer */
+
+footer {
+  position: relative;
+  /* position absolute causes lots of issues. With relative, it will always stick to the bottom */
+  background-color: darkgray;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.footerNavBar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  /* pushes the far bottom nav bar to the bottom edge */
+}
+
+
+/* social media nav bar */
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  /* adds some space between the social media icons */
+}
+
+/* footer nav bar a links */
+
+.footerNavBar a {
+  color: black;
+  font-size: smaller;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.footerNavBar a:hover {
+  border: 3px solid black;
+}
+
+/* social media icons */
+
+.fa {
+  padding: 7px;
+  margin: 3px;
+  border-radius: 30%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-spotify {
+  background: #1DB954;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #F26F23;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  filter: saturate(10);
+  box-shadow: 0 0 5px 3px rgb(0, 0, 0);
+}
+
+/* social media icons end here */
+
+/* footer ends here */
